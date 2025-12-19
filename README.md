@@ -3,7 +3,7 @@
 A Node.js / Express-based microservices boilerplate for building SaaS applications, including authentication, API gateway, and Docker support. Designed to help developers quickly bootstrap scalable, production-ready services.
 
 
-**Features**
+## **Features**
 
 Microservices architecture with API Gateway
 
@@ -23,8 +23,8 @@ saas-boilerplate-microservice/
 ├─ package.json
 └─ README.md
 
-Getting Started
-Prerequisites
+## **Getting Started**
+**Prerequisites**
 
 Node.js v18+
 
@@ -32,17 +32,17 @@ Docker & Docker Compose
 
 MongoDB (or use Docker setup)
 
-Run Locally with Docker
+**Run Locally with Docker**
 # Start all services
 docker-compose up --build
 
-Run Services Individually
+**Run Services Individually**
 # Navigate to a service folder, e.g., auth-service
 cd auth-service
 npm install
 npm run dev
 
-Adding a New Service
+**Adding a New Service**
 
 Create a new folder for your service.
 
@@ -54,7 +54,7 @@ Register the service in docker-compose.yml and the API Gateway.
 
 Use shared libraries/helpers as needed.
 
-📄 Environment Variables
+## **📄 Environment Variables**
 
 Create a .env file in each service with variables like:
 
@@ -62,7 +62,7 @@ PORT=3000
 MONGO_URI=mongodb://localhost:27017/mydb
 JWT_SECRET=your_secret_key
 
-Docker Support
+## **Docker Support**
 
 docker-compose up — start all services
 
